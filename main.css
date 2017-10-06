@@ -1,0 +1,26 @@
+h1{
+  text-align: center;
+  color: magenta;
+}
+
+h2#instructions {
+  text-align: center;
+  color: purple;
+}
+ p{
+   margin: 20px;
+ }
+
+ img{
+   max-height: 50px;
+ }
+
+.start{
+   text-align: center;
+ }
+
+ .trackSize {
+   border: 2px dashed grey;
+   height: 80px;
+   max-width: 20%;
+ }

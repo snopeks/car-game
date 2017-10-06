@@ -3,13 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Stephanie's Car Game</title>
+    <!-- set viewport to device width to allow responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
     <!-- jQuery -->
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- Custom JS -->
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="racetrack">
-      <p>Put racetrack here!</p>
+    <h1>Donut Dash</h1>
+    <h2 id="instructions">Instructions:</h2>
+    <p>Hit start to begin your dash to the tasty donuts! Press the > key to move right and get some donuts before Homer eats them all. </p>
+    <div class="text-center">
+      <button class="btn btn-primary start" type="confirm">Start!</button>
+    </div>
+    <div class="container" id="racetrack">
+      <div class="row">
+        <h2>Player 1</h2>
+        <div id="player1-start" class="col-xs-2 trackSize">
+
+        </div>
+        <div class="col-xs-2 trackSize" id='div2'>
+
+        </div>
+        <div class="col-xs-2 trackSize" id='div3'>
+
+        </div>
+        <div class="col-xs-2 trackSize" id='div4'>
+
+        </div>
+        <div class="col-xs-2 trackSize" id='div5'>
+
+        </div>
+        <div class="col-xs-2 trackSize finish-line" id='div6'>
+
+        </div>
+      </div>
+      <div class="row">
+        <h2>Player2</h2>
+        <div id="player2-start" class="col-xs-2 trackSize">
+
+        </div>
+        <div class="col-xs-2 trackSize">
+
+        </div>
+        <div class="col-xs-2 trackSize">
+
+        </div>
+        <div class="col-xs-2 trackSize">
+
+        </div>
+        <div class="col-xs-2 trackSize">
+
+        </div>
+        <div class="col-xs-2 trackSize finish-line">
+
+        </div>
+      </div>
     </div>
   </body>
 </html>
