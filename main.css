@@ -1,26 +1,73 @@
 h1{
+  font-family: 'Indie Flower', cursive;
+  font-size: 5.5em;
   text-align: center;
-  color: magenta;
+  color: #ed15a5;
+}
+
+body{
+  background-color: #42f49b;
+}
+
+h2{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1em;
+  color: purple;
 }
 
 h2#instructions {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 2.5em;
   text-align: center;
   color: purple;
 }
- p{
-   margin: 20px;
- }
 
- img{
-   max-height: 50px;
+p{
+   font-size: 1em;
+   padding: 25px;
+   background-color: white;
  }
 
 .start{
    text-align: center;
  }
+.player1-playing {
+  text-align: center;
+  background-image: url(images/lisa-simpson.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: inherit;
 
+}
+.player2-playing {
+  background-image: url(images/homer-simpson.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#p1finishLine{
+  background-image: url(images/donut.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#p2finishLine{
+  background-image: url(images/donut.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
  .trackSize {
-   border: 2px dashed grey;
+   background-color: white;
+   border: 2px solid grey;
    height: 80px;
    max-width: 20%;
  }
+
+/*.win-banner-hide {
+  display: none;
+}*/
+.win-banner{
+  font-family: "Indie Flower", cursive;
+  font-size: 2.5em;
+  color: #f70000;
+  display: none;
+}

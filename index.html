@@ -5,8 +5,12 @@
     <title>Stephanie's Car Game</title>
     <!-- set viewport to device width to allow responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Permanent+Marker" rel="stylesheet">
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="main.css">
     <!-- jQuery -->
@@ -15,11 +19,13 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <h1>Donut Dash</h1>
-    <h2 id="instructions">Instructions:</h2>
-    <p>Hit start to begin your dash to the tasty donuts! Press the > key to move right and get some donuts before Homer eats them all. </p>
+    <h1 class="animated rubberBand">Donut Dash</h1>
+    <h2 class="animated bounceInDown"id="instructions">Instructions:</h2>
+    <p class="animated bounceInDown">Press "start" to begin your dash to the tasty donuts! Press the > key to move right and get some donuts before Homer eats them all. </p>
     <div class="text-center">
       <button class="btn btn-primary start" type="confirm">Start!</button>
+      <button class="btn btn-primary restart" type="confirm">Stop!</button>
+      <div class="win-banner"></div>
     </div>
     <div class="container" id="racetrack">
       <div class="row">
@@ -27,19 +33,19 @@
         <div id="player1-start" class="col-xs-2 trackSize">
 
         </div>
-        <div class="col-xs-2 trackSize" id='div2'>
+        <div class="col-xs-2 trackSize">
 
         </div>
-        <div class="col-xs-2 trackSize" id='div3'>
+        <div class="col-xs-2 trackSize">
 
         </div>
-        <div class="col-xs-2 trackSize" id='div4'>
+        <div class="col-xs-2 trackSize">
 
         </div>
-        <div class="col-xs-2 trackSize" id='div5'>
+        <div class="col-xs-2 trackSize">
 
         </div>
-        <div class="col-xs-2 trackSize finish-line" id='div6'>
+        <div class="col-xs-2 trackSize" id='p1finishLine'>
 
         </div>
       </div>
@@ -60,7 +66,7 @@
         <div class="col-xs-2 trackSize">
 
         </div>
-        <div class="col-xs-2 trackSize finish-line">
+        <div class="col-xs-2 trackSize" id="p2finishLine">
 
         </div>
       </div>
