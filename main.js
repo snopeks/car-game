@@ -19,6 +19,11 @@ $(document).ready(function(){
         movePlayers("p2");
       }
     });
+    //TODO: bring instructions in when users hover on
+    //the instructions header
+    // $("#instructions").on('hover', function(){
+    //   $("p").css('display', 'inline')
+    // })
 })
 
 //when you click the start button, add your two players to the board
