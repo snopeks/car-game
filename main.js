@@ -42,6 +42,7 @@ function movePlayers(player){
   }
   //run a calculateWinner function
   calculateWinner()
+  // gameOver = true;
 }
 
 function calculateWinner(){
@@ -50,14 +51,21 @@ function calculateWinner(){
   if($("#p1finishLine").hasClass("player1-playing")
   && $("#p2finishLine").hasClass("player2-playing")){
     $(".win-banner").css("display", "block").text("You tied!")
+    $("#p1finishLine").addClass("animated bounceOutUp")
     gameOver = true;
   }
    else if($("#p1finishLine").hasClass("player1-playing")){
-    $(".win-banner").css('display', 'block').text('player 1 wins!')
+    $(".win-banner").css('display', 'block').text('Lisa grabbed the donuts and dashed to safety!')
+    $("#p1finishLine").addClass("animated bounceOutUp")
+    $("#p2finishLine").addClass("animated bounceOutUp")
+    $('.player2-playing').addClass('animated jello')
     gameOver = true;
   }
   else if($("#p2finishLine").hasClass("player2-playing")){
-    $(".win-banner").css('display', 'block').text('player 2 wins!')
+    $(".win-banner").css('display', 'block').text('Homer devoured the donuts in a split second!')
+    $("#p2finishLine").addClass("animated bounceOutUp")
+    $("#p1finishLine").addClass("animated bounceOutUp")
+    $('.player1-playing').addClass('animated jello')
     gameOver = true;
   }
 
@@ -71,4 +79,7 @@ function resetGame(){
   $("div").removeClass('player2-playing')
   //set gameOver to false
   gameOver = false;
+  //remove win banner
+  $(".win-banner").css("display", "none")
+  $(".trackSize").removeClass('animated bounceOutUp jello')
 }
