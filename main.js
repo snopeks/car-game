@@ -1,4 +1,4 @@
-console.log("javascript is linked")
+// console.log("javascript is linked")
 var gameOver = false;
 $(document).ready(function(){
     console.log("document is loaded")
@@ -51,8 +51,8 @@ function movePlayers(player){
 }
 
 function calculateWinner(){
-  console.log($('#p1finishLine'))
-  console.log($("#p1finishLine").hasClass("player1-playing"))
+  // console.log($('#p1finishLine'))
+  // console.log($("#p1finishLine").hasClass("player1-playing"))
   if($("#p1finishLine").hasClass("player1-playing")
   && $("#p2finishLine").hasClass("player2-playing")){
     $(".win-banner").css("display", "block").text("You tied!")
@@ -74,7 +74,7 @@ function calculateWinner(){
     gameOver = true;
   }
 
-  console.log("going to calculate the winner")
+  // console.log("going to calculate the winner")
 }
 
 function resetGame(){
