@@ -55,14 +55,14 @@ function calculateWinner(){
     gameOver = true;
   }
    else if($("#p1finishLine").hasClass("player1-playing")){
-    $(".win-banner").css('display', 'block').text('Lisa grabbed the donuts and dashed to safety!')
+    $(".win-banner").css('display', 'block').text('Lisa grabbed the donuts and dashed to victory! ')
     $("#p1finishLine").addClass("animated bounceOutUp")
     $("#p2finishLine").addClass("animated bounceOutUp")
     $('.player2-playing').addClass('animated jello')
     gameOver = true;
   }
   else if($("#p2finishLine").hasClass("player2-playing")){
-    $(".win-banner").css('display', 'block').text('Homer devoured the donuts in a split second!')
+    $(".win-banner").css('display', 'block').text('Homer devoured the donuts and ran away gleefully!')
     $("#p2finishLine").addClass("animated bounceOutUp")
     $("#p1finishLine").addClass("animated bounceOutUp")
     $('.player1-playing').addClass('animated jello')
